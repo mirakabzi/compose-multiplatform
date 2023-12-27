@@ -65,4 +65,5 @@ Compose HTML یک کتابخانه است که برای Kotlin/JS هدف گرف�
 * نمونه ها: [https://jb.gg/cmp-samples](https://jb.gg/cmp-samples)
 * آموزش ها: tutorials/README.md
 * سازگاری و نسخه بندی: [https://jb.gg/cmp-versioning](https://jb.gg/cmp-versioning)
+* آموزش فارسی کاتلین : [یادگیری کاتلین ](https://avasam.ir/product/48/Kotlin-full-course-by-sam-nikzad)
 * سابقه تغییرات: CHANGELOG.md
