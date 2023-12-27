@@ -1,88 +1,68 @@
-[![official project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
-[![Latest release](https://img.shields.io/github/v/release/JetBrains/compose-multiplatform?color=brightgreen&label=latest%20release)](https://github.com/JetBrains/compose-multiplatform/releases/latest)
-[![Latest build](https://img.shields.io/github/v/release/JetBrains/compose-multiplatform?color=orange&include_prereleases&label=latest%20build)](https://github.com/JetBrains/compose-multiplatform/releases)
+**Compose Multiplatform**
 
+Compose Multiplatform یک چارچوب UI اعلامی برای به اشتراک گذاشتن UI ها در چندین پلتفرم با Kotlin است. این بر اساس Jetpack Compose ساخته شده است و توسط JetBrains و مشارکت کنندگان متن باز توسعه یافته است.
 
+با استفاده از Compose Multiplatform می توانید UI خود را در پلتفرم های زیر به اشتراک بگذارید:
 
-# Compose Multiplatform
+* iOS (نسخه آزمایشی)
+* Android
+* دسکتاپ (Windows، macOS، Linux)
+* وب (آزمایشی)
 
-[**Compose Multiplatform**](https://jb.gg/cmp) is a declarative framework for sharing UIs across multiple platforms with Kotlin. 
-It is based on [Jetpack Compose](https://developer.android.com/jetpack/compose) and developed by [JetBrains](https://www.jetbrains.com/) and open-source contributors.
-
-You can choose the platforms across which to share your UIs using Compose Multiplatform:
-
-* [iOS](https://jb.gg/start-cmp) (Alpha)
-* [Android](https://jb.gg/start-cmp) 
-* [Desktop](https://jb.gg/start-cmp) (Windows, MacOS, Linux)
-* [Web](https://kotl.in/wasm-compose-example) (Experimental)
-
-For example, you can share UIs between iOS and Android or Windows and MacOS.
-
-![Shared UIs of the iOS, Android, desktop, and web apps](artwork/readme/apps.png)
+به عنوان مثال، می توانید UI ها را بین iOS و Android یا Windows و MacOS به اشتراک بگذارید.
 
 ## iOS
 
-> iOS support is in Alpha. It may change incompatibly and require manual migration in the future. 
-> We would appreciate your feedback on it in the public Slack channel [#compose-ios](https://kotlinlang.slack.com/archives/C0346LWVBJ4/p1678888063176359). 
-> If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+> پشتیبانی iOS در نسخه آزمایشی است. ممکن است ناسازگار تغییر کند و در آینده نیاز به مهاجرت دستی داشته باشد.
+> ما از بازخورد شما در کانال Slack عمومی #compose-ios استقبال می کنیم.
+> اگر با هر گونه مشکلی مواجه شدید، لطفاً در GitHub گزارش دهید.
 
-Compose Multiplatform shares most of its API with Jetpack Compose, the Android UI framework developed by Google. 
-You can use the same APIs to build user interfaces for both Android and iOS.
+Compose Multiplatform بیشتر API خود را با Jetpack Compose، چارچوب UI Android توسعه یافته توسط Google، به اشتراک می گذارد.
+می توانید از همان API ها برای ایجاد رابط های کاربری برای هر دو Android و iOS استفاده کنید.
 
-Since Compose is built on top of [Kotlin Multiplatform](https://jb.gg/kmp), 
-you can easily access native APIs, such as the [Camera API](https://developer.apple.com/documentation/avfoundation/capture_setup/avcam_building_a_camera_app), 
-and embed complex native UI views, such as [MKMapView](https://developer.apple.com/documentation/mapkit/mkmapview).
+از آنجایی که Compose بر اساس Kotlin Multiplatform ساخته شده است،
+می توانید به راحتی به API های بومی مانند Camera API و درج  رابط های UI بومی پیچیده مانند MKMapView دسترسی پیدا کنید.
 
-**[Get started with Compose Multiplatform](https://jb.gg/start-cmp)**
+**با Compose Multiplatform شروع کنید: [https://jb.gg/start-cmp](https://jb.gg/start-cmp)**
 
-## Android
+## اندروید
 
-When Android is one of your targets, you can get the same experience for Android as if you were developing an Android app 
-using [Jetpack Compose](https://developer.android.com/jetpack/compose).
+وقتی Android یکی از اهداف شما باشد، می توانید همان تجربه را برای Android داشته باشید مانند اینکه در حال توسعه یک برنامه Android با استفاده از Jetpack Compose هستید.
 
-**[Get started with Compose Multiplatform](https://jb.gg/start-cmp)**
+**با Compose Multiplatform شروع کنید: [https://jb.gg/start-cmp](https://jb.gg/start-cmp)**
 
-## Desktop
+## دسکتاپ
 
-Compose Multiplatform targets the JVM and supports high-performance hardware-accelerated UI rendering on all major desktop
-platforms – macOS, Windows, and Linux.
+Compose Multiplatform از JVM پشتیبانی می کند و در تمام پلتفرم های اصلی دسکتاپ از جمله macOS، Windows و Linux، رابط های کاربری با عملکرد بالا را ارائه می دهد.
 
-It has desktop extensions for menus, keyboard shortcuts, window manipulation, and notification management.
+این دارای افزونه های دسکتاپ برای منوها، میانبرهای صفحه کلید، تغییر شکل پنجره و مدیریت اعلان ها است.
 
-**[Get started with Compose Multiplatform](https://jb.gg/start-cmp)**
+**با Compose Multiplatform شروع کنید: [https://jb.gg/start-cmp](https://jb.gg/start-cmp)**
 
-> We would appreciate your feedback on Compose Multiplatform in the public Slack channel [#compose](https://kotlinlang.slack.com/archives/CJLTWPH7S/p1678882768039969).
+> ما از بازخورد شما در کانال Slack عمومی #compose استقبال می کنیم.
 
-## Web
+## وب
 
-> Web support is Experimental and may be changed at any time. Use it only for evaluation purposes. 
-> We would appreciate your feedback on it in the public Slack channel [#compose-web](https://kotlinlang.slack.com/archives/C01F2HV7868/p1678887590205449). 
-> If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+> پشتیبانی وب در حال آزمایش است و ممکن است در هر زمان تغییر کند. فقط برای اهداف ارزیابی استفاده کنید.
+> ما از بازخورد شما در کانال Slack عمومی #compose-web استقبال می کنیم.
+> اگر با هر گونه مشکلی مواجه شدید، لطفاً در GitHub گزارش دهید.
 
-You can experiment with sharing your mobile or desktop UIs with the web. Compose for Web is based on [Kotlin/Wasm](https://kotl.in/wasm), 
-the newest target for Kotlin Multiplatform projects. It allows Kotlin developers to run their code in the browser with 
-all the benefits that WebAssembly has to offer, such as good and predictable performance for your applications.
+می توانید با آزمایش Compose for Web UI های موبایل یا دسکتاپ خود را با وب به اشتراک بگذارید. Compose for Web بر اساس Kotlin/Wasm، جدیدترین هدف برای پروژه های Kotlin Multiplatform ساخته شده است. این به توسعه دهندگان Kotlin اجازه می دهد کد خود را در مرورگر با همه مزایایی که WebAssembly ارائه می دهد، مانند عملکرد خوب و قابل پیش بینی برای برنامه های خود، اجرا کنند.
 
-**[Get started with Compose for Web](https://kotl.in/wasm-compose-example)**
+**با Compose for Web شروع کنید: [https://kotl.in/wasm-compose-example](https://kotl.in/wasm-compose-example)**
 
-## Libraries
+## کتابخانه ها
 
 ### Compose HTML
 
-Compose HTML is a library targeting [Kotlin/JS](https://kotlinlang.org/docs/js-overview.html) that provides Composable building blocks 
-for creating web user interfaces with HTML and CSS.    
+Compose HTML یک کتابخانه است که برای Kotlin/JS هدف گرفته شده است و بلوک های سازنده Composable را برای ایجاد رابط های کاربری وب با HTML و CSS ارائه می دهد.
 
-> Note that Compose HTML is not a multiplatform library. It can be used only with Kotlin/JS.
+> توجه داشته باشید که Compose HTML یک کتابخانه چند پلتفرمی نیست. فقط می توان از آن با Kotlin/JS استفاده کرد.
 
-## Learn more
+## بیشتر بدانید
 
-* [FAQ](https://jb.gg/cmp-faq)
-* [Samples](https://jb.gg/cmp-samples)
-* [Tutorials](tutorials/README.md)
-* [Compatibility and versioning](https://jb.gg/cmp-versioning)
-* [Changelog](CHANGELOG.md)
-
-
-
-
-
+* پرسش های متداول: [https://jb.gg/cmp-faq](https://jb.gg/cmp-faq)
+* نمونه ها: [https://jb.gg/cmp-samples](https://jb.gg/cmp-samples)
+* آموزش ها: tutorials/README.md
+* سازگاری و نسخه بندی: [https://jb.gg/cmp-versioning](https://jb.gg/cmp-versioning)
+* سابقه تغییرات: CHANGELOG.md
